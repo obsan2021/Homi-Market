@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEthiopia - Shop</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="ShopEthiopia Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="language-switcher">
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="am">Amharic</option>
+                    <option value="or">Afaan Oromo</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shop-hero">
+            <h1>Our Products</h1>
+            <p>Browse through our amazing collection of products</p>
+        </section>
+
+        <section class="product-sec">
+            <div class="product-list">
+                <a href="#">
+                    <div class="product">
+                        <div class="product-img" style="background-image: url('product1.jpg');"></div>
+                        <div class="product-info">
+                            <p class="name">Product 1</p>
+                            <p class="cash">$200</p>
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="product">
+                        <div class="product-img" style="background-image: url('product2.jpg');"></div>
+                        <div class="product-info">
+                            <p class="name">Product 2</p>
+                            <p class="cash">$150</p>
+                            <button class="btn-add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </a>
+                <!-- Repeat for more products -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="social-media.html">Social Media</a></li>
+            </ul>
+            <div class="footer-language">
+                <select id="footer-language-select">
+                    <option value="en">English</option>
+                    <option value="am">Amharic</option>
+                    <option value="or">Afaan Oromo</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

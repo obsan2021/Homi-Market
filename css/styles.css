@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+}
+
+header {
+    background-color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.language-switcher {
+    font-size: 14px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px;
+    background-color: #ffffff;
+}
+
+.text-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+button.btn-glow {
+    padding: 10px 20px;
+    background-color: #337418;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.btn-glow:hover {
+    box-shadow: 0 0 15px 5px #5DD62C;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-sec {
+    padding: 40px 20px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-img {
+    background-color: #ddd;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.product-info .name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-info .cash {
+    font-size: 14px;
+    color: #337418;
+}
+
+footer {
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-language {
+    margin-top: 10px;
+}

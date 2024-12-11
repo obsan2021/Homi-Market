@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Shop Ethiopia</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        /* FAQ Section Styles */
+        .faq {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .faq h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            background-color: #f9f9f9;
+            padding: 15px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: #f1f1f1;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .faq-answer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Shop<span style="color: #5DD62C;">Ethiopia</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-item">
+            <div class="faq-question">What is Shop Ethiopia?</div>
+            <div class="faq-answer">
+                <p>Shop Ethiopia is your trusted online store providing quality products for all Ethiopians at competitive prices.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How can I place an order?</div>
+            <div class="faq-answer">
+                <p>Simply browse our products, add items to your cart, and proceed to checkout. Follow the instructions to complete your order.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">What payment methods are accepted?</div>
+            <div class="faq-answer">
+                <p>We accept major credit/debit cards, mobile money, and bank transfers for your convenience.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Can I return or exchange a product?</div>
+            <div class="faq-answer">
+                <p>Yes, we offer a hassle-free return and exchange policy. Please refer to our return policy for more details.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 ShopEthiopia. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Social Media</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle FAQ Answer
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            item.querySelector('.faq-question').addEventListener('click', () => {
+                const answer = item.querySelector('.faq-answer');
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
